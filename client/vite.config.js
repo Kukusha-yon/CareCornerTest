@@ -21,9 +21,6 @@ export default defineConfig({
         // Use default for everything else
         warn(warning);
       },
-      output: {
-        sourcemapExcludeSources: true
-      }
     },
   },
   server: {
