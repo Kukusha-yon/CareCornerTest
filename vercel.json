@@ -10,7 +10,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist",
-        "buildCommand": "cd client && npm install && npm install autoprefixer postcss tailwindcss --save-dev && npm run build"
+        "buildCommand": "cd client && npm install && npm run build"
       }
     }
   ],
