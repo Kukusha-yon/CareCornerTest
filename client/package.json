@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "vercel-build": "npm install && npm install @vitejs/plugin-react && npm install vite && npm run build",
+    "build": "vite build --mode production",
+    "vercel-build": "npm install && npm install autoprefixer postcss tailwindcss --save-dev && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
