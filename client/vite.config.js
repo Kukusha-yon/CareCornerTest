@@ -30,4 +30,9 @@ export default defineConfig({
       },
     },
   },
+  // Add this to handle client-side routing in production
+  preview: {
+    port: 3000,
+    strictPort: true,
+  },
 });
