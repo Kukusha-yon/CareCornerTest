@@ -6,6 +6,16 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     base: '/',
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Ignore "use client" directive warnings
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE' && warning.message.includes('use client')) {
+          return;
+        }
+        // Use default for everything else
+        warn(warning);
+      },
+    },
   },
   server: {
     port: 3000,
