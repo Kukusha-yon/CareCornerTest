@@ -11,6 +11,8 @@ const connectDB = async () => {
 
     // Connection options
     const options = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
       serverSelectionTimeoutMS: 30000, // 30 seconds
       connectTimeoutMS: 30000, // 30 seconds
       socketTimeoutMS: 30000, // 30 seconds

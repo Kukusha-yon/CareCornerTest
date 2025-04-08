@@ -42,9 +42,9 @@ export default defineConfig(({ command, mode }) => {
       // Ensure environment variables are replaced
       define: {
         'process.env.NODE_ENV': JSON.stringify(mode),
-      }
+      },
+      // Use relative paths for Vercel deployment
+      base: '/',
     },
-    // Use relative paths to ensure app works when deployed in subfolder
-    base: '/carecornerTest',
   }
 });

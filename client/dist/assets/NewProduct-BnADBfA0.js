@@ -1,1 +1,0 @@
-import{j as r}from"./ui-B5PjYYeE.js";import{P as o}from"./ProductForm-BhIDprex.js";import"./vendor-qOmVjXE-.js";import"./index-DBuhCPqP.js";import"./productService-rVeuLpxN.js";const e=()=>r.jsx(o,{});export{e as default};
